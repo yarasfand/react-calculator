@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(84, 88, 185);
+  
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Keypad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Keypad h2{
+  animation: inOutFocus 3s infinite;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: xx-large;
+  color: rgb(12, 23, 69);
+}
+
+@keyframes inOutFocus {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+.Keypad-Inside{
+  border-radius: 3.5px;
+  background-color: rgba(32, 32, 73, 0.842);
+  width: 18%;
+  padding: 12px; 
+  padding-top: 22px;
+}
+.data{
+  background-color: rgb(12, 23, 69);
+  margin: 4px;
+  border-radius: 5px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.data span{
+  float: right;
+  font-size: x-small;
+}
+
+.Res{
+  text-align: right;
+}
+
+.Keypad p{
+  padding: 20px;
+  color: wheat;
+  position: relative;
+  margin: auto;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+table td{
+  padding: 2.5px;
+}
+
+table button{
+  color: #05e9d6;
+  border-radius: 3.5px;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  height: 2.5em;
+  margin: 0;
+  width: 100%;
+  background-color:rgba(18, 86, 73, 0.831);
+  box-shadow: 2.3px 2.3px 0px #05e9d6;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+table button:hover{
+  transform: translateY(-2px);
+}
+
+table button:active{
+  box-shadow: none;
+  transform: translateY(0);
+}
+.equals{
+  height: 5.4em;
+}
+
